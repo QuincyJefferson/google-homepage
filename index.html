@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            body {
+            
+            }
+            a {
+                font-size: 14px;
+                color: rgb(80, 79, 79);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                text-align: center;
+            }
+
+        </style>
         <title>Google</title>
     </head>
     <body>
-        <nav>
-            <a href="#About" target="_blank" >About</a>
-            <a href="#Store" target="_blank" >Store</a>
-        </nav>
+        <ul>
+            <li><a href="#about" target="_blank" >About</a></li>
+            <li><a href="#store" target="_blank" >Store</a></li>
+            <li><a href="#gmail" target="_blank">Gmail</a></li>
+            <li><a href="#images" target="_blank">Images</a></li>
+            <li><a href="#googleApps" target="_blank">Google Apps</a></li>
+            <li><a href="#profile" target="_blank">Google Profile</a></li>
+        </ul>
         <div>
-            <img src="googlelogo_color_272x92dp.png" alt="google logo">
+            <img class="logo" src="googlelogo_color_272x92dp.png" alt="google logo">
 
+        </div>
+        <div>
+            <form>
+                <input type="text">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+            </form>
+        </div>
+        <div id="whatsGoogleDoing">
+            <a href="#links" target="_blank">Meet the research team using AI to reduce air pollution in Uganda</a>
         </div>
     </body>
     <footer>
-
+        <div id="footerLeft">
+            <a href="#advertising" target="_blank">Advertising</a>
+            <a href="#business" target="_blank">Business</a>
+            <a href="#howSearchWorks" target="_blank">How Search works</a>
+        </div>
+        <div id="footerRight">
+            <a href="#privacy" target="_blank">Privacy</a>
+            <a href="#terms" target="_blank">Terms</a>
+            <a href="#settings" target="_blank">Settings</a>
+            
+        </div>
     </footer>
 </html>
