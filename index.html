@@ -51,7 +51,8 @@
 
 
             body {
-
+                height: 100%;
+                width: 100%;
             }
             a {
                 font-size: 14px;
@@ -62,9 +63,15 @@
             a:hover {
                 text-decoration: underline;
             }
+            #navLeft {
+                margin-top: 15px;
+                display: inline-block;
+            }
             #navRight {
-                display: flex;
+                display: inline-block;
                 float: right;
+                margin-top: 15px;
+                padding-right: 25px;
             }
             #logo {
                 width: 100%;
@@ -74,25 +81,62 @@
                 margin: 250px auto 50px;
                 display: block;
             }
-            #search {
-                display: flex;
-                margin: 25px 25px 25px auto;
+            input {
+                display: block;
+                margin: 0px auto 0px;
+                width: 400px;
             }
-           
-            
+            button {
+                width: 150px;
+                text-align: center;
+            }
+            #buttons {
+                width: 100%;
+                text-align: center;
+                margin-top: 25px;
+            }
+            #whatsGoogleDoing { 
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .message {
+                padding: 0px;
+            }
+            footer {
+                background-color: rgb(240, 240, 240);
+                height: 35px;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                border-top: rgb(219, 219, 219) solid 1px;
+            }
+            #footerLeft {
+                display: inline-block;
+                margin-top: 9px;
+                
+            }
+            #footerRight {
+                display: inline-block;
+                float: right;
+                margin-top: 9px;
+                padding-right: 25px;
+            }
             
 
         </style>
         <title>Google</title>
     </head>
     <body>
-        <a href="#about" target="_blank" >About</a>
-        <a href="#store" target="_blank" >Store</a>
+        <div id="navLeft">
+            <a href="#about" target="_blank" >About</a>
+            <a href="#store" target="_blank" >Store</a>
+        </div>
         <div id="navRight">
             <a href="#gmail" target="_blank">Gmail</a>
             <a href="#images" target="_blank">Images</a>
             <a href="#googleApps" target="_blank">Google Apps</a>
-            <a href="#profile" target="_blank">Google Profile</a>
+            <a href="#account" target="_blank">Sign In</a>
         </div>
         <div id="logo">
             <img src="googlelogo_color_272x92dp.png" alt="google logo">
@@ -101,12 +145,14 @@
         <div id="search">
             <form>
                 <input class="searchBox" type="text">
-                <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+                <div id="buttons">
+                    <button id="googleSearch">Google Search</button>
+                    <button id="lucky">I'm Feeling Lucky</button>
+                </div>
             </form>
         </div>
         <div id="whatsGoogleDoing">
-            <a href="#links" target="_blank">Meet the research team using AI to reduce air pollution in Uganda</a>
+            <a class="message" href="#links" target="_blank">Meet the research team using AI to reduce air pollution in Uganda</a>
         </div>
     </body>
     <footer>
