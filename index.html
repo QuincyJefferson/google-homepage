@@ -2,46 +2,105 @@
 <html>
     <head>
         <style>
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed, 
+            figure, figcaption, footer, header, hgroup, 
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+                margin: 0;
+                padding: 0;
+                border: 0;
+                font-size: 100%;
+                font: inherit;
+                vertical-align: baseline;
+            }
+            /* HTML5 display-role reset for older browsers */
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
             body {
-            
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+
+
+
+
+            body {
+
             }
             a {
                 font-size: 14px;
                 color: rgb(80, 79, 79);
                 text-decoration: none;
+                padding-left: 25px;
             }
             a:hover {
                 text-decoration: underline;
             }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+            #navRight {
+                display: flex;
+                float: right;
             }
-            li {
-                display: inline-block;
-                text-align: center;
+            #logo {
+                width: 100%;
+                height: 50%;
             }
+            img {
+                margin: 250px auto 50px;
+                display: block;
+            }
+            #search {
+                display: flex;
+                margin: 25px 25px 25px auto;
+            }
+           
+            
+            
 
         </style>
         <title>Google</title>
     </head>
     <body>
-        <ul>
-            <li><a href="#about" target="_blank" >About</a></li>
-            <li><a href="#store" target="_blank" >Store</a></li>
-            <li><a href="#gmail" target="_blank">Gmail</a></li>
-            <li><a href="#images" target="_blank">Images</a></li>
-            <li><a href="#googleApps" target="_blank">Google Apps</a></li>
-            <li><a href="#profile" target="_blank">Google Profile</a></li>
-        </ul>
-        <div>
-            <img class="logo" src="googlelogo_color_272x92dp.png" alt="google logo">
+        <a href="#about" target="_blank" >About</a>
+        <a href="#store" target="_blank" >Store</a>
+        <div id="navRight">
+            <a href="#gmail" target="_blank">Gmail</a>
+            <a href="#images" target="_blank">Images</a>
+            <a href="#googleApps" target="_blank">Google Apps</a>
+            <a href="#profile" target="_blank">Google Profile</a>
+        </div>
+        <div id="logo">
+            <img src="googlelogo_color_272x92dp.png" alt="google logo">
 
         </div>
-        <div>
+        <div id="search">
             <form>
-                <input type="text">
+                <input class="searchBox" type="text">
                 <button>Google Search</button>
                 <button>I'm Feeling Lucky</button>
             </form>
